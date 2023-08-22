@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url(../Assets/photo-3.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#content{
+    padding: 40px;
+    color: green;
+    
+
+}
+#nav-lists{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+#nav-lists>li>a{
+    text-decoration: none;
+}
