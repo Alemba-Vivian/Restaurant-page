@@ -5,25 +5,32 @@
 }
 body{
     height: 100vh;
-    background: url(../Assets/photo-3.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-#content{
-    padding: 40px;
-    color: green;
     
+}
+h1{
+    padding-bottom: 20px;
+}
+
+
+/* working with the home page */
+#section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+ 
+}
+
+#section-2{
+    background-color: #354230;
+    padding: 40px;
+    color: white;
 
 }
-#nav-lists{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    text-transform: uppercase;
+#image-one{
+    height: 400px;
+    width: 400px;
+
 }
-#nav-lists>li>a{
-    text-decoration: none;
-}
+

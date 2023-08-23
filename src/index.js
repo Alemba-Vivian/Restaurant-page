@@ -1,9 +1,7 @@
-import { render } from "./Components/render";
-import './styles/style.css';
-import './Assets/logo-1.png';
+import { home } from "./Layout/home";
 
-const container = document.querySelector('#content');
-container.appendChild(render());
+
+home();
 
 
 
