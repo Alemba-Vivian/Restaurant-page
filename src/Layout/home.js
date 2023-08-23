@@ -3,6 +3,8 @@ import foodImageOne from '../Assets/photo-5.jpg';
 import foodImageTwo from '../Assets/photo-3.jpg';
 import foodImageThree from '../Assets/photo-4.jpg';
 import forkImage from '../Assets/fork-knife.jpg';
+import menuBackroundImage from '../Assets/photo-6.jpg';
+import IconOne from '../Assets/logo-1.png';
 import ContentImg from '../Assets/photo-1.JPG';
 import '../styles/style.css';
 
@@ -158,12 +160,137 @@ const home =()=>{
     section_four.appendChild(content_four);
 
 
+    //section 5
+    const section_five = document.createElement("div");
+    section_five.id ="section-5";
+
+    const heading5 = document.createElement('h3');
+    heading5.id ="heading-5";
+
+    heading5.innerHTML =`The selected menu <br>
+                         More great meals await you <br>
+                         inside the restaurant`;
+
+    
+     const content =document.createElement("div");
+     content.classList.add("contents");
+     
+     const content_five = document.createElement("div");
+     content_five.id ="content-5";
+
+     const menu_bg =new Image();
+     menu_bg.id ="menu_bg";
+     menu_bg.src =menuBackroundImage;
+
+
+     content_five.appendChild(menu_bg);
+
+
+     const content_six = document.createElement("div");
+     content_six.id ="content-6";
+
+
+     const myIconOne = new Image();
+     myIconOne.id ="icon-one";
+     myIconOne.src =IconOne;
+
+     const heading6 =document.createElement("h3");
+     heading6.id ="heading-6";
+     heading6.innerHTML =`DESSERTS`;
+
+     //one
+     const heading7 = document.createElement("h4");
+     heading7.id ="heading-7";
+     heading7.innerHTML =`Bruschetta <span id =desserts>$8.25<span>`;
+
+     const para4 = document.createElement("p");
+     para4.id ="para4";
+     para4.innerHTML =`Toasted bread with diced tomatoes, <br>
+                       balsamic vinegar, basil and cheese. <br>
+                       add pesto $1.00`;
+
+     //two
+    const heading8 = document.createElement("h4");
+    heading8.id ="heading-8";
+    heading8.innerHTML =`Fried Mozarella <span id =desserts>$8.00</span>`;
+                  
+    const para5 = document.createElement("p");
+    para5.id ="para5";
+    para5.innerHTML =`Toasted bread with diced tomatoes, <br>
+                       balsamic vinegar, basil and cheese. <br>
+                    add pesto $1.00`; 
+
+
+    //three  
+    const heading9 = document.createElement("h4");
+    heading9.id ="heading-8";
+    heading9.innerHTML =`Antipasto Originalle <span id =desserts>$17.25</span>`;
+                  
+    const para6 = document.createElement("p");
+    para6.id ="para5";
+    para6.innerHTML =`Toasted bread with diced tomatoes, <br>
+                       balsamic vinegar, basil and cheese. <br>
+                    add pesto $1.00`;  
+                    
+    //four
+    const heading10 = document.createElement("h4");
+    heading10.id ="heading-8";
+    heading10.innerHTML =`Shrimp Scampi <span id =desserts>$10.50</span>`;
+                  
+    const para7 = document.createElement("p");
+    para7.id ="para5";
+    para7.innerHTML =`Toasted bread with diced tomatoes, <br>
+                       balsamic vinegar, basil and cheese. <br>
+                    add pesto $1.00`;                 
+
+    //five
+    const heading11 = document.createElement("h4");
+    heading11.id ="heading-8";
+    heading11.innerHTML =`Melanzine Caprese <span id =desserts>$10.50</span>`;
+                  
+    const para8 = document.createElement("p");
+    para8.id ="para5";
+    para8.innerHTML =`Toasted bread with diced tomatoes, <br>
+                       balsamic vinegar, basil and cheese. <br>
+                    add pesto $1.00`;                 
+
+
+
+
+
+     //appending children
+     content_six.appendChild(myIconOne);
+     content_six.appendChild(heading6);
+     content_six.appendChild(heading7);
+     content_six.appendChild(para4);
+
+     content_six.appendChild(heading8);
+     content_six.appendChild(para5);
+
+     content_six.appendChild(heading9);
+     content_six.appendChild(para6);
+
+     content_six.appendChild(heading10);
+     content_six.appendChild(para7);
+
+     content_six.appendChild(heading11);
+     content_six.appendChild(para8);
+
+
+     content.appendChild(content_five)
+     content.appendChild(content_six);
+
+
+     section_five.appendChild(heading5);
+     section_five.appendChild(content); 
+                     
 
 
      document.body.querySelector("#content").appendChild(section_one);
      document.body.querySelector("#content").appendChild(section_two);
      document.body.querySelector("#content").appendChild(section_three);
      document.body.querySelector("#content").appendChild(section_four);
+     document.body.querySelector("#content").appendChild(section_five);
 
 
 

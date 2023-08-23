@@ -110,4 +110,57 @@ span{
     width: 400px;
 }
 
+#section-5{
+    padding-bottom: 100px;
+    
+
+}
+.contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+   
+}
+#menu_bg{
+    height: 600px;
+    width: 400px;
+}
+#heading-5{
+    padding-bottom: 100px;
+}
+#icon-one{
+    height: 150px;
+    width: 150px;
+  
+  
+}
+#heading-6{
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+    text-align: left;
+
+}
+#heading-7{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#heading-8{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#desserts{
+    float: right;
+}
+#para4{
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+
+}
+#para5{
+    padding-bottom: 20px;
+    border-bottom: 2px solid lightgray;
+
+}
+
+
 
