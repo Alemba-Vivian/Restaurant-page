@@ -110,6 +110,7 @@ span{
     width: 400px;
 }
 
+
 #section-5{
     padding-bottom: 100px;
     
@@ -131,6 +132,12 @@ span{
 #icon-one{
     height: 150px;
     width: 150px;
+  
+  
+}
+#icon-two{
+    height: 200px;
+    width: 200px;
   
   
 }
@@ -159,6 +166,20 @@ span{
 #para5{
     padding-bottom: 20px;
     border-bottom: 2px solid lightgray;
+
+}
+
+/* section 6 */
+#section-6{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    
+}
+
+#saladImage{
+    height: 600px;
+    width: 400px;
 
 }
 

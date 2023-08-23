@@ -5,6 +5,7 @@ import foodImageThree from '../Assets/photo-4.jpg';
 import forkImage from '../Assets/fork-knife.jpg';
 import menuBackroundImage from '../Assets/photo-6.jpg';
 import IconOne from '../Assets/logo-1.png';
+import IconTwo from '../Assets/logo-2.png';
 import ContentImg from '../Assets/photo-1.JPG';
 import '../styles/style.css';
 
@@ -285,12 +286,105 @@ const home =()=>{
      section_five.appendChild(content); 
                      
 
+     //section 6
+     const section_six = document.createElement("div");
+     section_six.id ="section-6";
+
+     const salad1 = document.createElement("div");
+     salad1.id ="salad1";
+
+
+
+
+     const salad2 = document.createElement("div");
+     salad2.id ="salad2";
+
+     const myIconTwo = new Image();
+     myIconTwo.id ="icon-two";
+     myIconTwo.src =IconTwo;
+
+     const heading12 =document.createElement("h3");
+     heading12.id ="heading-6";
+     heading12.innerHTML =`SOUPS & SALADS`;
+
+
+
+     //one
+     const heading13 = document.createElement("h4");
+     heading13.id ="heading-7";
+     heading13.innerHTML =`Tuescany <span id =desserts>$9.45<span>`;
+
+     const para9 = document.createElement("p");
+     para9.id ="para4";
+     para9.innerHTML =`Toasted bread with diced tomatoes, <br>
+                       balsamic vinegar, basil and cheese. <br>
+                       add pesto $1.00`;
+
+
+
+
+
+
+
+
+
+
+     salad2.appendChild(myIconTwo);
+     salad2.appendChild(heading12);
+
+     salad2.appendChild(heading13);
+     salad2.appendChild(para9);
+
+
+
+
+
+
+
+
+
+
+     const salad3 = document.createElement("div");
+     salad3.id ="salad3";
+
+     const saladImage = new Image();
+     saladImage.id ="saladImage";
+     saladImage.src =HomeBackgroundImge;
+
+
+     
+     salad3.appendChild(saladImage)
+
+
+
+
+     section_six.appendChild(salad1);
+     section_six.appendChild(salad2);
+     section_six.appendChild(salad3);
+     
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+     //appending the children to the main container
 
      document.body.querySelector("#content").appendChild(section_one);
      document.body.querySelector("#content").appendChild(section_two);
      document.body.querySelector("#content").appendChild(section_three);
      document.body.querySelector("#content").appendChild(section_four);
      document.body.querySelector("#content").appendChild(section_five);
+     document.body.querySelector("#content").appendChild(section_six);
 
 
 
