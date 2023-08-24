@@ -13,13 +13,42 @@ h1{
 }
 
 
+/* working with the header */
+#section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+   
+
+}
+#myLogo{
+    height: 150px;
+   
+}
+#btn-home,
+#btn-About,
+#btn-Menu,
+#btn-Contact{
+    /* padding: 5px 10px 5px 10px; */
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    background: none;
+    color: black;
+    
+}
+
+
 /* working with the home page */
 #section-1{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    /* padding-bottom: 20px; */
+    padding-bottom: 150px;
+    padding-top: 30px;
+    color: olive;
  
 }
 #image-one{
@@ -82,6 +111,7 @@ h3{
     line-height: 1.5;
     letter-spacing: 4;
     padding-bottom: 20px;
+    color: olive;
 }
 span{
     color: olive;

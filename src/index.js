@@ -1,7 +1,13 @@
-import { home } from "./Layout/home";
+import { startPageLoad } from "./Components/initial-page-load";
 
 
-home();
+const render=()=>{
+    startPageLoad();
+
+}
+
+render();
+
 
 
 
