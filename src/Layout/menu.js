@@ -510,10 +510,16 @@ const menu=()=>{
 
 
 
-     document.body.querySelector("#content").appendChild(section_five);
-     document.body.querySelector("#content").appendChild(section_six);
-     document.body.querySelector("#content").appendChild(section_seven);
-     document.body.querySelector("#content").appendChild(section_eight);
+
+     const loadMenu=()=>{
+       document.body.querySelector("#content").appendChild(section_five);
+       document.body.querySelector("#content").appendChild(section_six);
+       document.body.querySelector("#content").appendChild(section_seven);
+       document.body.querySelector("#content").appendChild(section_eight);
+
+     }  
+     
+     return{loadMenu};
  
  
 

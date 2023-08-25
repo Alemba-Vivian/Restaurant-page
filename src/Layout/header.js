@@ -16,12 +16,14 @@ const headerNavbar =()=>{
     buttonHome.innerHTML =`HOME`;
     section.appendChild(buttonHome);
 
-    buttonHome.addEventListener('click', ()=>{
-        home();
-    });
-    
+    const addHome =()=>{
+          buttonHome.addEventListener('click', ()=>{
+          const myHome =home();
+          myHome.loadHome();
+          console.log("I am at home");
+         });
 
-   
+    }
 
     const buttonAbout = document.createElement("button");
     buttonAbout.id ="btn-About";
@@ -29,9 +31,16 @@ const headerNavbar =()=>{
     buttonAbout.innerHTML =`ABOUT US`;
     section.appendChild(buttonAbout);
 
-    buttonAbout.addEventListener('click', ()=>{
-        about();
-    })
+
+    const addAbout=()=>{
+        buttonAbout.addEventListener('click', ()=>{
+        const about_us = about();
+        about_us.loadAbout();
+         });
+
+    }
+
+   
 
     const logo = new Image();
     logo.id ="myLogo";
@@ -45,9 +54,16 @@ const headerNavbar =()=>{
     buttonMenu.innerHTML = `MENU`;
     section.appendChild(buttonMenu);
 
-    buttonMenu.addEventListener('click', ()=>{
-        menu();
-    })
+
+    const addMenu =()=>{
+        buttonMenu.addEventListener('click', ()=>{
+        const myMenu = menu();
+        myMenu.loadMenu();
+        });
+
+    }
+
+ 
 
     const buttonContact = document.createElement("button");
     buttonContact.id ="btn-Contact";
@@ -55,16 +71,25 @@ const headerNavbar =()=>{
     buttonContact.innerHTML = `CONTACT`;
     section.appendChild(buttonContact);
 
-    buttonContact.addEventListener('click', ()=>{
-        contact();
-    })
+
+    const addContact=()=>{
+        buttonContact.addEventListener('click', ()=>{
+        const myContact =contact();
+        myContact.loadContact();
+        });
+
+     }
+
+ 
+
+    const loadHeader=()=>{
+       
+        document.body.querySelector("#content").appendChild(section);       
+
+       }
 
 
-  
-
-    document.body.querySelector("#content").appendChild(section);
-
-
+    return{loadHeader, addHome, addAbout, addMenu, addContact};
 
 }
 

@@ -99,8 +99,17 @@ const contact=()=>{
        section_ten.appendChild(place3);
 
 
-       document.body.querySelector("#content").appendChild(section_nine);
-       document.body.querySelector("#content").appendChild(section_ten);
+       const loadContact =()=>{
+
+        document.body.querySelector("#content").appendChild(section_nine);
+        document.body.querySelector("#content").appendChild(section_ten);
+
+       }
+
+       return {loadContact};
+
+
+     
 
 
 

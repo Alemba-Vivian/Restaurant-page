@@ -95,10 +95,13 @@ const about=()=>{
 
 
 
+       const loadAbout=()=>{
+              document.body.querySelector("#content").appendChild(section_three);
+              document.body.querySelector("#content").appendChild(section_four);
 
-       document.body.querySelector("#content").appendChild(section_three);
-       document.body.querySelector("#content").appendChild(section_four);
+       }
+       
+       return{loadAbout};
    
 }
-
 export{about};

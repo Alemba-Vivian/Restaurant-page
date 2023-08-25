@@ -5,8 +5,11 @@ import { about } from "../Layout/about";
 import { headerNavbar } from "../Layout/header";
 
 const startPageLoad=()=>{
+    const header =headerNavbar();
+    header.loadHeader();
 
-    headerNavbar();
+    const myhome = home();
+    myhome.loadHome();
     
     // about();
     // menu();
