@@ -1,2 +1,3 @@
 # Restaurant-page
-creating a simple restaurant web page using the fundamentals of webpack
+Build a restaurant page using webpack and javascript ES6 Modules
+
