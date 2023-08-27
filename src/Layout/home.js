@@ -3,6 +3,10 @@ import ContentImg from '../Assets/photo-1.JPG';
 import '../styles/style.css';
 
 const home =()=>{
+  const contentDiv = document.querySelector('#content');
+  contentDiv.replaceChildren();
+ 
+ 
 
     //section 1
     const section_one = document.createElement("div");
@@ -68,18 +72,17 @@ const home =()=>{
 
     const loadHome=()=>{
        //appending the children to the main container
-     document.body.querySelector("#content").appendChild(section_one);
-     document.body.querySelector("#content").appendChild(section_two);
+     
+    contentDiv.appendChild(section_one);
+    contentDiv.appendChild(section_two);
+
+   
 
     }
 
     return {loadHome};
     
-   
-
-
-
-
+  
 }
 
 export{home};

@@ -1,21 +1,27 @@
 import { home } from "../Layout/home";
-import { menu } from "../Layout/menu";
-import { contact } from "../Layout/contact";
-import { about } from "../Layout/about";
 import { headerNavbar } from "../Layout/header";
 
-const startPageLoad=()=>{
-    const header =headerNavbar();
-    header.loadHeader();
+const heading = headerNavbar();
+heading.loadHeader();
 
+//loading the navigation bar
+const startPageLoad =()=>{
     const myhome = home();
     myhome.loadHome();
-    
-    // about();
-    // menu();
-    // contact();
-   
-    
+
 }
+
+
+
+const loadNavigation=(()=>{
+   heading.addHome();
+   heading.addAbout();
+   heading.addMenu();
+   heading.addContact();
+
+
+      
+})();
+
 
 export{startPageLoad};

@@ -4,6 +4,8 @@ import ContentImg from '../Assets/photo-1.JPG';
 
 
 const contact=()=>{
+        const contentDiv = document.querySelector('#content');
+        contentDiv.replaceChildren();
 
         //section 9
         const section_nine =document.createElement("div");
@@ -99,10 +101,10 @@ const contact=()=>{
        section_ten.appendChild(place3);
 
 
-       const loadContact =()=>{
+         const loadContact =()=>{
 
-        document.body.querySelector("#content").appendChild(section_nine);
-        document.body.querySelector("#content").appendChild(section_ten);
+        contentDiv.appendChild(section_nine);
+        contentDiv.appendChild(section_ten);
 
        }
 

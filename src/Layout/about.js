@@ -6,40 +6,49 @@ import '../styles/style.css';
 
 
 const about=()=>{
+
+       const contentDiv = document.querySelector('#content');
+       contentDiv.replaceChildren();
+
        //section 3
        const section_three = document.createElement("div");
        section_three.id ="section-3";
    
        const heading3 =document.createElement("h3");
+       heading3.id="head3";
        heading3.innerHTML =`We know how to make <br> the best <span>kenyan food</span> in the city`;
    
        const gridImages = document.createElement("div");
        gridImages.id ="grid-images";
    
+       const gridImage1 = document.createElement("div");
        const foodOne = new Image();
        foodOne.classList.add("food-images");
        foodOne.id ="food-1";
    
        foodOne.src =foodImageOne;
+       gridImage1.appendChild(foodOne);
    
-   
+       const gridImage2 = document.createElement("div");
        const foodTwo = new Image();
        foodTwo.classList.add("food-images");
        foodTwo.id ="food-2";
    
        foodTwo.src =foodImageTwo;
+       gridImage2.appendChild(foodTwo);
    
-   
+       const gridImage3 = document.createElement("div");
        const foodThree = new Image();
        foodThree.classList.add("food-images");
        foodThree.id ="food-3";
    
        foodThree.src =foodImageThree;
+       gridImage3.appendChild(foodThree);
    
    
-       gridImages.appendChild(foodOne);
-       gridImages.appendChild(foodTwo);
-       gridImages.appendChild(foodThree);
+       gridImages.appendChild(gridImage1);
+       gridImages.appendChild(gridImage2);
+       gridImages.appendChild(gridImage3);
    
    
    
@@ -96,8 +105,8 @@ const about=()=>{
 
 
        const loadAbout=()=>{
-              document.body.querySelector("#content").appendChild(section_three);
-              document.body.querySelector("#content").appendChild(section_four);
+             contentDiv.appendChild(section_three);
+             contentDiv.appendChild(section_four);
 
        }
        

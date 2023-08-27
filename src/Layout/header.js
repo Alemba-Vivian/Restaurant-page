@@ -18,9 +18,11 @@ const headerNavbar =()=>{
 
     const addHome =()=>{
           buttonHome.addEventListener('click', ()=>{
-          const myHome =home();
-          myHome.loadHome();
-          console.log("I am at home");
+            console.log("I am at home");
+            const myHome =home();
+           myHome.loadHome();
+
+        
          });
 
     }
@@ -84,7 +86,7 @@ const headerNavbar =()=>{
 
     const loadHeader=()=>{
        
-        document.body.querySelector("#content").appendChild(section);       
+        document.body.querySelector("#header").appendChild(section);       
 
        }
 

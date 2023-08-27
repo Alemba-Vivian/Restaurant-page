@@ -1,12 +1,17 @@
 import { startPageLoad } from "./Components/initial-page-load";
 
 
-const render=()=>{
+
+const renderFirstPage=()=>{
     startPageLoad();
 
 }
+renderFirstPage();
 
-render();
+
+
+
+
 
 
 

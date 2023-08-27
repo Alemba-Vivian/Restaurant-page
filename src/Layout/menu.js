@@ -8,6 +8,8 @@ import '../styles/style.css';
 
 const menu=()=>{
 
+   const contentDiv =document.querySelector('#content');
+   contentDiv.replaceChildren();
     //section 5
     const section_five = document.createElement("div");
     section_five.id ="section-5";
@@ -15,9 +17,8 @@ const menu=()=>{
     const heading5 = document.createElement('h3');
     heading5.id ="heading-5";
 
-    heading5.innerHTML =`The selected menu <br>
-                         More great meals await you <br>
-                         inside the restaurant`;
+    heading5.innerHTML =`More great meals <br> await you
+                         inside <br> the restaurant`;
 
     
      const content =document.createElement("div");

@@ -5,11 +5,16 @@
 }
 body{
     height: 100vh;
+    background-color: black;
+    color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 h1{
     padding-bottom: 20px;
+}
+#header{
+    padding-top: 30px;
 }
 
 
@@ -18,12 +23,13 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
    
 
 }
 #myLogo{
-    height: 150px;
+    height: 100px;
+    border-radius: 150px;
    
 }
 #btn-home,
@@ -35,14 +41,20 @@ h1{
     border: none;
     font-size: 1.3rem;
     background: none;
-    color: black;
+    /* color: black; */
+    color: olive;
     
+}
+.btn:hover{
+    cursor: pointer;
+   
 }
 
 
 /* working with the home page */
 #section-1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -66,6 +78,7 @@ h1{
 
 }
 #content-1{
+    padding-bottom: 90px;
    
 }
 h2{
@@ -95,14 +108,19 @@ ul{
     margin-top: -80px;
 }
 
-
+/* working with section 3 */
 #section-3{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 100px; */
+    padding: 40px;
+    text-align: center;
+}
+#head3{
+    padding-bottom: 50px;
 }
 
 h3{
@@ -118,13 +136,13 @@ span{
 }
 .food-images{
     height: 250px;
-    height: 250px;
+    width:250px;
  
 }
 #grid-images{
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap: 5px;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    /* gap: 5px; */
 }
 
 #section-4{
@@ -134,13 +152,15 @@ span{
     align-items: center;
     gap: 20px;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 #fork-image{
     height: 400px;
     width: 400px;
 }
 
-
+/* 
+working with section 5 */
 #section-5{
     padding-bottom: 100px;
     
@@ -148,7 +168,7 @@ span{
 }
 .contents{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 50px;
    
 }
@@ -202,7 +222,7 @@ span{
 /* section 6 */
 #section-6{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 50px;
     padding-bottom: 100px;
     
@@ -218,7 +238,7 @@ span{
 /* section 7 */
 #section-7{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 50px;
     padding-bottom: 100px;
     
@@ -233,7 +253,7 @@ span{
 /* section 8 */
 #section-8{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 50px;
     padding-bottom: 100px;
     
@@ -291,7 +311,7 @@ span{
 /* section 10 */
 #section-10{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
 
 }
