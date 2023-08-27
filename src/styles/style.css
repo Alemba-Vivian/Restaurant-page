@@ -47,6 +47,7 @@ h1{
 }
 .btn:hover{
     cursor: pointer;
+    color: orange;
    
 }
 
@@ -133,6 +134,7 @@ h3{
 }
 span{
     color: olive;
+    padding-right: 10px;
 }
 .food-images{
     height: 250px;
@@ -169,7 +171,7 @@ working with section 5 */
 .contents{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 50px;
+    gap: 10px;
    
 }
 #menu_bg{
@@ -223,7 +225,7 @@ working with section 5 */
 #section-6{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 50px;
+    gap: 10px;
     padding-bottom: 100px;
     
 }
@@ -239,7 +241,7 @@ working with section 5 */
 #section-7{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 50px;
+    gap: 10px;
     padding-bottom: 100px;
     
 }
@@ -254,7 +256,7 @@ working with section 5 */
 #section-8{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 50px;
+    gap: 10px;
     padding-bottom: 100px;
     
 }
@@ -283,6 +285,10 @@ working with section 5 */
     border: none;
     border-radius: 2px;
 
+}
+#btn-book-table:hover{
+    cursor: pointer;
+    background-color: orange;
 }
 
 

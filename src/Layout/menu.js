@@ -1,3 +1,4 @@
+import { contact } from './contact';
 import IconOne from '../Assets/logo-1.png';
 import IconTwo from '../Assets/logo-2.png';
 import menuBackroundImage from '../Assets/photo-6.jpg';
@@ -469,6 +470,12 @@ const menu=()=>{
       const buttonOne = document.createElement("button");
       buttonOne.id ="btn-book-table";
       buttonOne.innerHTML =`BOOK A TABLE`;
+
+      buttonOne.addEventListener('click',()=>{
+         const book = contact();
+         book.loadContact();
+
+      })
                     
                     
       buttonContainer.appendChild(buttonOne);                    
